@@ -5,6 +5,12 @@ generator client {
   provider = "prisma-client-js"
 }
 
+generator nestgraphql {
+    //v15.1.1以上の場合は"prisma-nestjs-graphql"のみでok
+    provider = "node node_modules/prisma-nestjs-graphql"
+    output = "../src/@generated/prisma-nestjs-graphql"
+}
+
 datasource db {
   provider = "mysql"
   url      = env("DATABASE_URL")

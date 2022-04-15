@@ -27,11 +27,16 @@
     "prisma:seed": "npx prisma db seed"
   },
   "dependencies": {
+    "@nestjs/apollo": "^10.0.9",
     "@nestjs/common": "^8.0.0",
     "@nestjs/core": "^8.0.0",
+    "@nestjs/graphql": "^10.0.9",
     "@nestjs/platform-express": "^8.0.0",
     "@prisma/client": "latest",
+    "apollo-server-express": "^3.6.7",
+    "graphql": "^16.3.0",
     "nestjs-prisma": "^0.15.1",
+    "prisma-nestjs-graphql": "^15.2.2",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
     "rxjs": "^7.2.0"
@@ -78,6 +83,6 @@
     "testEnvironment": "node"
   },
   "prisma": {
-    "seed": "ts-node prisma/seed.ts"
+    "seed": "ts-node ./prisma/seed/start.ts"
   }
 }

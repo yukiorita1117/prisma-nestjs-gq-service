@@ -33,3 +33,9 @@ lerna-debug.log*
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+
+# 
+.env
+
+# npx prisma generateの実行によって、コードファーストアプローチのGraphQLのコードが生成されるが150ファイルを超えるのでignoreする
+/src/@generated
